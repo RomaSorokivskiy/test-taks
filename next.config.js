@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    redirects: async() => {
-        return [
-            {
-                source: '/auths',
-                destination: '/table',
-                permanent: true
-            }
-        ]
-    }
+    redirects: async() => {}
 }
 
 module.exports = nextConfig
