@@ -5,15 +5,7 @@ export default withAuth(
     function middleware(req) {
         console.log(req.nextauth.token)
     },
-    {
-        callbacks: {
-            authorized: ({ token }) => {
-                console.log("Authorized callback, token: ", token);
-                return !!token;
-            },
-        },
-        secret: process.env.NEXTAUTH_SECRET,
-    }
+{secret: process.env.NEXTAUTH_SECRET,}
 )
 export const config = {
     matcher: ["/table"],
