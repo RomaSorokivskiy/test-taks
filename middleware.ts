@@ -6,3 +6,6 @@ export default withAuth({
         signIn: '/auths'
     }
 })
+export const config = {
+    matcher: ["/table"],
+};
