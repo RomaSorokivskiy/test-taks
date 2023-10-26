@@ -51,7 +51,7 @@ const CrudContainerComponent = (props:any) => {
                             }
                         </tbody>
                     </table>
-                    <button onClick={() => handleLoadMore()} className="w-[250px] h-[45] rounded-lg bg-amber-100 text-white">Load more...</button>
+                    <button onClick={() => handleLoadMore()} className="w-[250px] h-[45px] rounded-lg bg-amber-100 text-gray-900 mt-3">Load more...</button>
                     {addForm? <AddFormCrudComponent limit={limit} setActive={setAddForm}/>: null}
                     {editForm? <EditFormComponent data={editData} limit={limit} setActive={setEditForm}/>:null}
                 </>

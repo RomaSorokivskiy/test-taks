@@ -1,8 +1,11 @@
 import { withAuth } from "next-auth/middleware";
 
-export default withAuth(
-{secret: process.env.NEXTAUTH_SECRET}
-)
+export default withAuth({
+    secret: process.env.NEXTAUTH_SECRET,
+    pages: {
+        signIn: '/auths'
+    }
+})
 export const config = {
     matcher: ["/table"],
 };
