@@ -3,7 +3,6 @@ import axios from "axios";
 import routesAPI from "app/app/const/routes_api";
 import Credentials from "next-auth/providers/credentials";
 export const authConfig: AuthOptions = {
-    secret:process.env.NEXTAUTH_SECRET,
     providers: [
         Credentials({
             credentials: {
@@ -31,5 +30,7 @@ export const authConfig: AuthOptions = {
     ],
     pages: {
         signIn: '/auths'
-    }
+    },
+    secret:process.env.NEXTAUTH_SECRET,
+
 }
