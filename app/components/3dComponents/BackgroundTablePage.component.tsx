@@ -4,7 +4,7 @@ import * as THREE from "three"
 import {BakeShadows, OrbitControls, PerspectiveCamera, Stats} from '@react-three/drei'
 import {Canvas, useFrame, useLoader} from "@react-three/fiber";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import {useEffect, useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import {AnimationMixer, Mesh} from "three";
 import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import { easing } from 'maath'
@@ -52,6 +52,7 @@ const BackgroundTablePageComponent = ({ ...props }) => {
                     <Bloom luminanceThreshold={0} mipmapBlur luminanceSmoothing={0.0} intensity={6} />
                     <DepthOfField target={[0, 0, 1]} focalLength={0.3} bokehScale={1} height={700} />
                 </EffectComposer>
+                {/*ts-ignore*/}
                 <CameraRig />
                 {/* Small helper that freezes the shadows for better performance */}
                 <BakeShadows />
@@ -59,10 +60,11 @@ const BackgroundTablePageComponent = ({ ...props }) => {
         </div>
     )
 }
-function CameraRig() {
+const CameraRig = () => {
     useFrame((state, delta) => {
         easing.damp3(state.camera.position, [-1 + (state.pointer.x * state.viewport.width) / 3, (1 + state.pointer.y) / 2, 5.5], 0.5, delta)
         state.camera.lookAt(-1,15,15)
     })
+    return <></>
 }
 export default BackgroundTablePageComponent;
