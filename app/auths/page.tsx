@@ -1,3 +1,4 @@
+'use client'
 import AuthFormComponent from "app/app/components/authForm.component";
 import {Suspense} from "react";
 import BackgroundFormAuthPageComponent from "app/app/components/3dComponents/BackgroundFormAuthPage.component";

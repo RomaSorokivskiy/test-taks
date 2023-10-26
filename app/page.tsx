@@ -1,3 +1,4 @@
+'use client'
 import BackgroundMainPageComponent from "app/app/components/3dComponents/BackgroundMainPage.component"
 import {Suspense} from "react";
 import Link from "next/link";
