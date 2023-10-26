@@ -1,3 +1,4 @@
+"use client"
 import {FetchCrudList, RemoveCrud} from "app/app/reducers/Action";
 import {useEffect, useState} from "react";
 import {connect} from "react-redux";
