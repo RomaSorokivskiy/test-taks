@@ -15,7 +15,7 @@ export default function Home() {
                               <li>
                                   <p>A little about Form component</p>
                                   <p>So as u can see we have a single route <a>/auth</a>. Form automatically change a status, depends what u need, register or login.</p>
-                                  <p>(Some more about register, it's just none working template, and ya i can create a fully working auth methods for back-end, with all validation, and JWT-Tokens, and hook up it for template)</p>
+                                  <p>(Some more about register, it&apos;s just none working template, and ya i can create a fully working auth methods for back-end, with all validation, and JWT-Tokens, and hook up it for template)</p>
                               </li>
                               <p>Table:</p>
                               <li>
