@@ -1,0 +1,11 @@
+Model Information:
+* title:	Muse - The Dark Side
+* source:	https://sketchfab.com/3d-models/muse-the-dark-side-77076cd66a5d430b891e5985906d7585
+* author:	Zemasu (https://sketchfab.com/zemasu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Muse - The Dark Side" (https://sketchfab.com/3d-models/muse-the-dark-side-77076cd66a5d430b891e5985906d7585) by Zemasu (https://sketchfab.com/zemasu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
